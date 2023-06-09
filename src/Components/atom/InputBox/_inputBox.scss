@@ -1,0 +1,30 @@
+@import "src/palette";
+
+.inputBoxContainer {
+  width: 100%;
+  .inputBox {
+    width: 100%;
+    margin: 0;
+    border: 1px solid $border-grey;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: white;
+    font-family: Inter, Tahoma, sans-serif;
+    outline: none;
+  }
+  .inputBoxError {
+    color: $primary-red;
+    border-color: $primary-red;
+  }
+  .inputErrorMessage {
+    color: $primary-red;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-align: left;
+    margin-left: 1px;
+  }
+}

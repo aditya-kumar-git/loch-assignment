@@ -1,0 +1,48 @@
+@import "src/palette";
+
+.notificationCardOne {
+  background-color: $primary-white;
+  border-radius: 15px;
+  padding: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+  color: $primary-black;
+  background-image: linear-gradient(#ffffff33, #165dff29);
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .notificationCOHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    .notificationCOHLogo {
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+    .notificationCOHSave {
+      font-size: 0.6rem;
+      font-weight: 600;
+    }
+  }
+  .notificationCOBottom {
+    .notificationCOTitle {
+      font-weight: 500;
+      font-size: 0.6rem;
+      text-align: left;
+    }
+    .notificationCOEmail {
+      background-color: $primary-white;
+      padding: 0.5rem;
+      font-size: 0.6rem;
+      margin-top: 0.5rem;
+      font-weight: 500;
+      border-radius: 5px;
+      text-align: left;
+    }
+  }
+}
+@media only screen and (max-width: 60rem) {
+}

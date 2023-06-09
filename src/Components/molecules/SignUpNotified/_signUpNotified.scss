@@ -1,0 +1,140 @@
+@import "src/palette";
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
+@keyframes scrollDecoy {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+@keyframes scrollSecondDecoy {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes scrollThirdDecoy {
+  0% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.signUpNotified {
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  .signUpNCardSlider {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    align-self: stretch;
+
+    .signUpNCardSliderTrackerThirdDecoy {
+      position: absolute;
+      animation: scrollThirdDecoy 15000ms linear infinite;
+      display: flex;
+      width: 100%;
+      .signUpNCardContainer {
+        width: 50%;
+        .signUpNCard {
+          width: 90%;
+          object-fit: contain;
+          border-radius: 15px;
+        }
+      }
+    }
+    .signUpNCardSliderTrackerSecondDecoy {
+      position: absolute;
+      animation: scrollSecondDecoy 15000ms linear infinite;
+      display: flex;
+      width: 100%;
+      .signUpNCardContainer {
+        width: 50%;
+        .signUpNCard {
+          width: 90%;
+          object-fit: contain;
+          border-radius: 15px;
+        }
+      }
+    }
+    .signUpNCardSliderTrackerDecoy {
+      position: absolute;
+      animation: scrollDecoy 15000ms linear infinite;
+      display: flex;
+      width: 100%;
+      .signUpNCardContainer {
+        width: 50%;
+        .signUpNCard {
+          width: 90%;
+          object-fit: contain;
+          border-radius: 15px;
+        }
+      }
+    }
+    .signUpNCardSliderTracker {
+      animation: scroll 15000ms linear infinite;
+      display: flex;
+      width: 100%;
+      .signUpNCardContainer {
+        width: 50%;
+        .signUpNCard {
+          width: 90%;
+          object-fit: contain;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  .signUpNContent {
+    width: 50%;
+    text-align: left;
+    margin-right: 2rem;
+    .signUpNCIcon {
+      height: 2rem;
+      width: 2rem;
+    }
+    .signUpNCHeading {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .signUpNCDesc {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: $primary-off-white;
+    }
+  }
+}
+@media only screen and (max-width: 80rem) {
+  .signUpNotified {
+    flex-direction: column;
+    width: 100%;
+    .signUpNCardSlider {
+      width: 100%;
+      margin-top: 2rem;
+    }
+    .signUpNContent {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

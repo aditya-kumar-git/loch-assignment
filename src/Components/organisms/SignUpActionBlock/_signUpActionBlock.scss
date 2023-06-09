@@ -1,0 +1,55 @@
+@import "src/palette";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.signUpActionBlock {
+  width: 45%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  animation: fadeIn 4000ms;
+  height: 100vh;
+  overflow-y: scroll;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .signUpABData {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    height: fit-content;
+    .signUpABDataHeading {
+      font-weight: 500;
+      font-size: 2rem;
+      color: $primary-grey;
+      text-align: left;
+    }
+    .signUpABDataDesc {
+      font-weight: 600;
+      font-size: 0.8rem;
+      color: $primary-black;
+    }
+  }
+}
+
+@media only screen and (max-width: 80rem) {
+  .signUpActionBlock {
+    width: 100vw;
+    height: 100vh;
+    .signUpABData {
+      margin-left: 10%;
+      margin-right: 10%;
+      .signUpABDataHeading {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import "src/palette";
+
+.signUpWatchWhales {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+
+  .signUpWWImageContainer {
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .signUpWWImage {
+      width: 80%;
+      object-fit: contain;
+      border-radius: 15px;
+    }
+  }
+  .signUpWWContent {
+    width: 50%;
+    text-align: right;
+    .signUpWWCIcon {
+      height: 2rem;
+      width: 2rem;
+    }
+    .signUpWWCHeading {
+      font-size: 1.8rem;
+      font-weight: 500;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .signUpWWCDesc {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: $primary-off-white;
+    }
+  }
+}
+@media only screen and (max-width: 80rem) {
+  .signUpWatchWhales {
+    height: fit-content;
+    flex-direction: column-reverse;
+    .signUpWWImageContainer {
+      width: 100%;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+    .signUpWWContent {
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+}

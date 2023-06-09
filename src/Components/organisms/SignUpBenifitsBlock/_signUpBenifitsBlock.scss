@@ -1,0 +1,49 @@
+@import "src/palette";
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: transwlateX(0%);
+  }
+}
+.signUpBenifitsBlock {
+  width: 55%;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  animation: slideInFromLeft 2000ms;
+  .gradientBackground {
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    z-index: -1;
+    left: -50%;
+    bottom: -15%;
+    background: radial-gradient(
+      79.84% 79.84% at 32.27% 91.27%,
+      rgba(31, 169, 17, 0.810119) 17.21%,
+      #2f15d0 64.58%,
+      rgba(0, 0, 0, 0.9) 100%
+    );
+  }
+  .signUpBenifitsBlockContent {
+    height: 100%;
+    width: 100%;
+    color: $primary-white;
+    overflow-y: scroll;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+@media only screen and (max-width: 80rem) {
+  .signUpBenifitsBlock {
+    width: 100vw;
+    animation: none;
+    padding-top: 2rem;
+    .signUpBenifitsBlockContent {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
+}

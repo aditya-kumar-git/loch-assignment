@@ -1,0 +1,55 @@
+@import "src/palette";
+
+.notificationCardTwo {
+  background-color: $primary-white;
+  border-radius: 15px;
+  padding: 1rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  box-sizing: border-box;
+  color: $primary-black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 9rem;
+  .notificationCTHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    .notificationCTHIcon {
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+    .notificationCTHSmallIcon {
+      height: 1rem;
+      width: 1rem;
+    }
+    .notificationCTHSave {
+      font-size: 0.6rem;
+      font-weight: 600;
+    }
+  }
+  .notificationCTBottom {
+    .notificationCTTitle {
+      font-weight: 500;
+      font-size: 0.6rem;
+      text-align: left;
+    }
+    .notificationCTAmount {
+      background-color: $faded-grey;
+      padding: 0.3rem;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      margin-top: 0.5rem;
+      font-size: 0.45rem;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 50%;
+    }
+  }
+}
+@media only screen and (max-width: 60rem) {
+}
