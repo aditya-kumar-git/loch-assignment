@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Loch Assignment
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). No third party repositories were used other than scss, all the animations and styling are done custom through css.
 
