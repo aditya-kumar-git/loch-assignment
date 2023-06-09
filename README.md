@@ -17,4 +17,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Live Application
 
-Instead you can check out the website here [http://loch-assignment.netlify.app]([http://localhost:3000](http://loch-assignment.netlify.app/)
+Instead you can check out the website here [http://loch-assignment.netlify.app](http://loch-assignment.netlify.app/)
